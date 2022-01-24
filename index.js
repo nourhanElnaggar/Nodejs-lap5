@@ -67,7 +67,8 @@ git push
 // Show the request 
 app.use(logRequest)
 
-// Handlig errors
+
+
 app.use((err, req, res, next) => {
   if (err.status >= 500) {
     console.log(err.internalMessage);
